@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Transaction Manager</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Transaction Manager</h1>
+
+            <form id="transaction-form">
+                <input type="number" id="amount" placeholder="Amount" required />
+                <select id="type" required>
+                    <option value="">Select Type</option>
+                    <option value="Credit">Credit</option>
+                    <option value="Debit">Debit</option>
+                </select>
+                <input type="text" id="category" placeholder="Category" required />
+                <button type="submit">Add Transaction</button>
+            </form>
+
+            <h2>Total Balance: <span id="balance">0</span></h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-list"></tbody>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
